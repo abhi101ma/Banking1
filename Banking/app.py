@@ -16,7 +16,6 @@ from sklearn.metrics import accuracy_score, classification_report, confusion_mat
 import plotly.express as px
 import seaborn as sns
 import matplotlib.pyplot as plt
-from PIL import Image
 #------------------------------------------------------------------------------------#
 
 #--------------------------------Page Configuration----------------------------------#
@@ -40,7 +39,6 @@ st.sidebar.write("Abhinav Mathur")
 #--------------------------------Introduction Page-----------------------------------#
 if menu == "Introduction":
     st.snow()
-    st.image(image)
     st.markdown("<h1 style='text-align: center; color: White;'>Predictive Analytics and Recommendation Systems in Banking</h1>", unsafe_allow_html=True)
     st.markdown("---")
     st.header("Introduction")
