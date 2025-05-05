@@ -39,7 +39,6 @@ st.sidebar.write("Abhinav Mathur")
 
 #--------------------------------Introduction Page-----------------------------------#
 if menu == "Introduction":
-    st.snow()
     st.markdown("<h1 style='text-align: center; color: White;'>Predictive Analytics and Recommendation Systems in Banking</h1>", unsafe_allow_html=True)
     st.markdown("---")
     st.header("Introduction")
@@ -57,7 +56,7 @@ if menu == "Introduction":
     """)
     st.header("Dataset")
     st.write("""
-    The datasets used in this project are sourced from Kaggle and contain information about bank customers, including demographics, transaction history, loan details, and credit card usage. These datasets provide a rich source of information for building predictive models and recommendation systems.
+    The datasets contain information about bank customers, including demographics, transaction history, loan details, and credit card usage. These datasets provide a rich source of information for building predictive models and recommendation systems.
     """)
 
 #------------------------------------------------------------------------------------#
@@ -68,7 +67,7 @@ elif menu == "Exploratory Data Analysis":
     st.markdown("---")
 
     # Load the dataset
-    df = pd.read_csv('bank.csv')
+    df = pd.read_csv('dataset_revised1.csv')
 
     st.header("Dataset Overview")
     st.write("Shape of the dataset:", df.shape)
@@ -202,7 +201,7 @@ elif menu == "Customer Churn Prediction":
     st.markdown("---")
 
     # Load the dataset
-    df = pd.read_csv('bank.csv') # Assuming 'deposit' column indicates churn ('no' = churn, 'yes' = not churn)
+    df = pd.read_csv('dataset_revised1.csv') # Assuming 'deposit' column indicates churn ('no' = churn, 'yes' = not churn)
                                  # Let's redefine churn: If they didn't deposit ('no'), maybe they churned.
     df['churn'] = df['deposit'].apply(lambda x: 1 if x == 'no' else 0) # 1 = Churned, 0 = Not Churned
 
