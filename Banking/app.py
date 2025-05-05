@@ -16,6 +16,7 @@ from sklearn.metrics import accuracy_score, classification_report, confusion_mat
 import plotly.express as px
 import seaborn as sns
 import matplotlib.pyplot as plt
+from PIL import Image
 #------------------------------------------------------------------------------------#
 
 #--------------------------------Page Configuration----------------------------------#
