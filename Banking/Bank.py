@@ -46,7 +46,7 @@ with open("knn_pro.pkl","rb") as f:
 
 
 #LOAD THE DATASET
-df=pd.read_csv("C:\My Setups\Bank Recommendation\dataset_revised1.csv")
+df=pd.read_csv("dataset_revised1.csv")
 
 
 
