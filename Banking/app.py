@@ -28,20 +28,18 @@ st.set_page_config(page_title='Predictive Analytics and Recommendation Systems i
 
 #--------------------------------Sidebar Configuration-------------------------------#
 st.sidebar.header('Predictive Analytics and Recommendation Systems in Banking')
-st.sidebar.image('logo1.png')
 st.sidebar.markdown("---")
 menu = st.sidebar.radio(
     "Select an Option",
     ("Introduction", "Exploratory Data Analysis", "Customer Churn Prediction", "Customer Segmentation", "Loan Approval Prediction", "Credit Card Recommendation")
 )
 st.sidebar.markdown("---")
-st.sidebar.write("Developed by Geeth Priya")
+st.sidebar.write("Abhinav Mathur")
 #------------------------------------------------------------------------------------#
 
 #--------------------------------Introduction Page-----------------------------------#
 if menu == "Introduction":
     st.snow()
-    image = Image.open('logo2.png')
     st.image(image)
     st.markdown("<h1 style='text-align: center; color: White;'>Predictive Analytics and Recommendation Systems in Banking</h1>", unsafe_allow_html=True)
     st.markdown("---")
