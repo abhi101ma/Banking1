@@ -17,7 +17,7 @@ st.markdown("An interactive walkthrough of a data science project for banking cl
 # Load data
 @st.cache_data
 def load_data():
-    df = pd.read_csv("data/bank.csv", sep=';')
+    df = pd.read_csv("dataset_revised1.csv", sep=';')
     return df
 
 df = load_data()
