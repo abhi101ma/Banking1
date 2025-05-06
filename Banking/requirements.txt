@@ -1,6 +1,5 @@
 streamlit
 pandas
-scikit-learn
 numpy
 Pillow
 plotly
@@ -10,3 +9,4 @@ faker
 imblearn
 scipy
 surprise
+scikit-learn
