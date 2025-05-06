@@ -1,12 +1,12 @@
-streamlit
-pandas
-numpy
+streamlit>=1.15.0,<1.36.0
+pandas>=1.3.0,<2.3.0
+numpy<2.0  # Crucial change! Or numpy~=1.26.0
+scipy>=1.7.0,<1.14.0 # Scipy also depends on numpy
+scikit-learn>=1.0.0,<1.6.0
+scikit-surprise>=1.1.1,<1.2.0
+imblearn # Or scikit-learn-contrib
+matplotlib>=3.4.0,<3.10.0
+seaborn>=0.11.0,<0.14.0
+Faker>=10.0.0,<26.0.0
 Pillow
 plotly
-seaborn
-matplotlib
-faker
-imblearn
-scipy
-surprise
-scikit-learn
