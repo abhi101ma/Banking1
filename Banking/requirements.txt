@@ -6,3 +6,7 @@ Pillow
 plotly
 seaborn
 matplotlib
+faker
+imblearn
+scipy
+surprise
